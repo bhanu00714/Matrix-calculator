@@ -1,4 +1,3 @@
-import numpy as np
 import matrix_op
 print("WELCOME...\n")
 print("Menu\n")
@@ -92,4 +91,5 @@ while True:
                 print("Enter a valid matrix")
         case 12:
             print("Thankyou...")
+
             break
