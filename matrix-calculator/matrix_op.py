@@ -62,16 +62,6 @@ def transpose(mat):
             mat2[j][i] = mat[i][j]
     print(mat2)
 def determinant(a):
-    # if (a.shape[0] == 2 and a.shape[1] == 2):
-    #     print((a[0][0]*a[1][1])-(a[0][1]*a[1][0]))
-    # elif (a.shape[0] == 1 and a.shape[1] == 1):
-    #     print(a[0][0])
-    # elif(a.shape[0] == 3 and a.shape[1] == 3):
-    #     det1 = a[0][0]*((a[1][1]*a[2][2])-(a[1][2]*a[2][1]))
-    #     det2 = a[0][1]*((a[1][0]*a[2][2])-(a[1][2]*a[2][0]))
-    #     det3 =  a[0][2]*((a[1][0]*a[2][1])-(a[1][1]*a[2][0]))
-    #     det = det1-det2+det3
-    #     print(det)
     if(a.shape[0] == a.shape[1]):
         print("\nMatrix determinant:",end="\t")
         print(np.linalg.det(a))
@@ -88,5 +78,6 @@ def inverse(a):
 def rank(a):
     print("Rank:",end="\t")
     print(np.linalg.matrix_rank(a))
+
 
 
